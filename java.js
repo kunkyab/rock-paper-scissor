@@ -42,7 +42,7 @@ else{
     roundWinner = "its tie";
 }
 return roundWinner;
-return playerScore;
+
 
 }
 
@@ -70,11 +70,16 @@ function playRound() {
 
 function game()
  {
-    for (let i = 0; i <=5; i++) {
+    for (let i = 1; i <=5; i++) {
         playRound();
 
         }
-    
+    if(computerScore >playerScore) {
+        console.log("computer won by ${computerScore}");
+    }
+    {
+        console.log( `you win by ${playerScore}`);
+    }
   
 }
 
